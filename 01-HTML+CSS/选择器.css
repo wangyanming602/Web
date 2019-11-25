@@ -1,0 +1,27 @@
+#only{
+	background-color: red;
+}
+
+.demo1{
+	background-color: yellow;
+}
+
+.demo2{
+	color: #f40;
+}
+
+span{
+	font-weight: bold;
+}
+
+*{
+	background-color: green;
+}
+
+[class="demo3"]{
+	background-color: red;
+}
+
+em{
+	background-color: yellow!important;
+}

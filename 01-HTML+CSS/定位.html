@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定位</title>
+	<link rel="stylesheet" type="text/css" href="定位.css">
+</head>
+<body>
+<!-- position: (定位) -->
+	<!-- 1.absolute绝对定位
+	1.脱离原来位置进行定位
+	2.相对于最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位
+	 -->
+
+	<!-- 2.relative 
+	1.保留原来位置进行定位
+	2.相对于自己原来的位置进行定位
+	 -->
+
+<!-- 用relative作为参照物，用absolute进行定位 -->
+	
+	<!-- 3.fixed
+	1.滚动页面不动
+	 -->
+	<!-- 4.static(默认值) -->
+	
+	<div class="demo"></div>
+	<div class="box"></div>
+	<div class="plat">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+		<div class="circle5"></div>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<!-- 两栏布局 -->
+	<div class="right"></div>
+	<div class="left"></div>
+
+	<!-- margin塌陷 (垂直方向的margin，父子元素是结合到一起的，取最大值。)-->
+	<div class="wrapper">
+		<div class="content"></div>
+	</div>
+
+	<!-- margin合并(不解决) -->
+	<span class="box1">123</span>
+	<span class="box2">234</span>
+	<div class="demo1">1</div>
+	<div class="demo2">2</div>
+	<!-- bfc -->
+	<!-- block format context 块级格式化上下文 -->
+	<!-- 
+	如何触发一个盒子的bfc:
+		position:absolute;
+		display:inline-block;
+		float:left/right;
+		overflow:hidden;溢出盒子的部分要隐藏展示
+
+	 -->
+</body>
+</html>

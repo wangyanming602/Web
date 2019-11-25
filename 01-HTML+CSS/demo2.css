@@ -1,0 +1,41 @@
+/*
+父子选择器/派生选择器(间接也可)
+*/
+strong em{/*strong下的所有em*/
+	background-color: red;
+}
+.wrapper .box em{
+	background-color: yellow;
+}
+
+/*直接子元素选择器*/
+div > strong{
+	background-color: green;
+}
+
+section div ul li a em{/*浏览器自右向左找*/
+	background-color: yellow;
+}
+
+/*并列选择器*/
+div.demo{
+	background-color: red;
+}
+
+/*权重计算*/
+#idDiv p{/*100+1*/
+	background-color: red;
+}
+.classDiv .classP{/*10+10*/
+	background-color: green;
+}
+div .classP#idP{/*1+10+100*/
+	background-color: yellow;
+}
+
+/*分组选择器*/
+em, 
+strong, 
+span{
+	font-size: 25px;
+}

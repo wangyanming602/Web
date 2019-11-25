@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+	<style type="text/css">
+		input{
+			border: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+	<form method="get" action="" ><!-- get/post --><!-- http://www.baidu.com/123.php -->
+		<p>
+			username:<input type="text" name="username" style="color: #999;" value="请输入用户名" onfocus="if(this.value=='请输入用户名'){this.value='';this.style.color='#424242'}" onblur="if(this.value==''){this.value='请输入用户名';this.style.color='#999'}">
+		</p>
+		<p>
+			password:<input type="password" name="passwerd" value="">
+			<!-- var div = document.getElementsByTagName('input')[1];
+			div.value -->
+		</p>
+		<p>
+			<!-- 单选框 -->
+			喜欢的水果：
+			香蕉<input type="radio" name="fruit" value="banana" checked="checked">
+			苹果<input type="radio" name="fruit" value="apple">
+			梨<input type="radio" name="fruit" value="pear">
+		</p>
+		<p>
+			<!-- 复选框 -->
+			喜欢的水果：
+			香蕉<input type="checkbox" name="fruit" value="banana" checked="checked">
+			苹果<input type="checkbox" name="fruit" value="apple">
+			梨<input type="checkbox" name="fruit" value="pear">
+		</p>
+		<p>
+			城市：
+			<select name="province">
+				<option>beijing</option>
+				<option>tianjing</option>
+				<option>shanghai</option>
+			</select>
+		</p>
+		<input type="submit" value="提交">
+	</form>
+</body>
+</html>

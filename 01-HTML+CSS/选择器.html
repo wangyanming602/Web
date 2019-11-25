@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选择器</title>
+	<link rel="stylesheet" type="text/css" href="选择器.css">
+</head>
+<body>
+	<!-- 1.id选择器 -->
+	<div id="only">123</div>
+
+	<!-- 2.class选择器 -->
+	<div class="demo1">456</div>
+	<div class="demo1 demo2">456</div>
+
+	<!-- 3.标签选择器 -->
+	<span>789</span>
+	<div>
+		<span>789</span>
+	</div>
+
+	<!-- 4.通配符选择器 -->
+	<!-- 所有的标签 -->
+
+	<!-- 5.属性选择器 -->
+	<div class="demo3">602</div>
+
+	<em style="background-color: black;">!important</em>
+	<br>
+
+	!important > 行间样式 > id > class | 属性 > 标签选择器 > 通配符
+<!-- 
+	CSS权重(256进制)
+
+	！important			Infinity
+	行间样式				1000
+	id 					100
+	class|属性|伪类		10
+	标签|伪元素			1
+	通配符选择器 			0 
+-->
+</body>
+</html>

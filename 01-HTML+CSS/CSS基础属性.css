@@ -1,0 +1,61 @@
+div{
+	font-size: 25px;/*设置字体的高； 一般默认是16，一般互联网默认是12。*/
+	font-weight: bold;/*lighter normal(400) bold(700) bolder 100 200 300 ... 900*/
+	font-style: italic;/*斜体*/
+	font-family: arial;
+	color: #f40;
+	
+	border:1px solid black;/*border-width: border-style:solid实线/dashed(条状虚线)/dotted(点状虚线) border-color:*/
+	/*
+	width: 0;        //三角形
+	height: 0;
+	border-top-color: transparent; 透明色 left,right,top,bottom
+	*/
+
+	/*对齐方式*/
+	text-align: center;/*left/right*/
+
+	/*单行文本垂直居中*/
+	/*height: 100px;
+	line-height: 100px;*/
+
+	/*首行缩进*/
+	text-indent: 2em; /*1em = 1 font-size;*/
+}
+/*
+1.土鳖式（纯英文单词）
+2.颜色代码(#f40)
+3.颜色函数 rgb(0-255, 0-255, 0-255)
+*/
+/*
+	R		G		B
+  00-ff	  00-ff	  00-ff
+*/
+
+span{
+	color: rgb(0, 0, 238);
+	text-decoration: underline;/*文本装饰*/ /*line-through中划线 / none / underline下划线 / overline上划线*/
+	cursor: pointer;pointer小手 / help问号 / copy / move  ... 
+}
+
+/*伪类选择器*/
+a:hover{
+	background-color: #f40;
+	font-size: 16px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-family: arial;
+}
+
+/*行级元素块级元素可以更改*/
+a{
+	display: block;
+}
+
+/*通配符选择器初始化所有标签*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}

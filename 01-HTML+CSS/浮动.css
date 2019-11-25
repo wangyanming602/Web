@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	border: 1px solid black;
+}
+
+.content{
+	float: left;/*right*/
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	background-color: black;
+}
+
+/*伪元素清除浮动*/
+.wrapper::after{ /*before*/
+	content:"";
+	display: block;
+	clear: both;/*left/right(清除周边浮动流) 必须是块级元素才能加*/
+}
+
+/*凡是设置了position:abolute; float:left/right;
+把内部把元素转换成inline-block;*/
+/*.wrapper{
+	float: left;
+	border: 2px solid red;
+}*/
+
+.box{
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.demo{
+	width: 150px;
+	height: 150px;
+	background-color: green;
+}
+
+
+
